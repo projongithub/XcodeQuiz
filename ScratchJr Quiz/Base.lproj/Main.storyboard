@@ -31,10 +31,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="START"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvk-tQ-Ics"/>
-                                    <segue destination="qDi-dX-Z6o" kind="show" id="JbX-Du-LVM"/>
+                                    <segue destination="qDi-dX-Z6o" kind="show" id="W7b-Iq-vzy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ENTER USER NAME HERE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-ut-3um">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ENTER USER NAME HERE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-ut-3um" userLabel="typeUserName">
                                 <rect key="frame" x="110" y="409" width="196" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WHc-I0-qdd"/>
                     <connections>
-                        <outlet property="typeUserName" destination="eTI-ut-3um" id="xch-jF-M9y"/>
+                        <outlet property="typeUserName" destination="eTI-ut-3um" id="NEu-J2-E7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,7 +61,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi Teddy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaM-fi-fzS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi Teddy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaM-fi-fzS" userLabel="displayUserName">
                                 <rect key="frame" x="162" y="92" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -97,6 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="q0H-nc-tcR"/>
                     <connections>
+                        <outlet property="displayUserName" destination="gaM-fi-fzS" id="Tds-7W-hzK"/>
                         <outlet property="displayUsername" destination="gaM-fi-fzS" id="Yhj-cw-fLq"/>
                     </connections>
                 </viewController>

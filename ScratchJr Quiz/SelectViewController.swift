@@ -9,15 +9,16 @@ import UIKit
 
 class SelectViewController: UIViewController {
     
-    @IBOutlet weak var displayUsername: UILabel!
     var text: String?
+    
+    @IBOutlet weak var displayUserName: UILabel!
+    
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        if text != nil {
-            displayUsername.text = text
+        
+        if let receivedText = text {
+            displayUserName.text = receivedText
         }
     }
     
-
 }
