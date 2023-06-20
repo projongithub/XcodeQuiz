@@ -9,12 +9,20 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
-         let storeName = typeUserName.text ?? ""
-         
-        let
-     }
     
-}
+    @IBOutlet weak var typeUserName: UITextField!
+    
+    override func viewDidLoad() {
+           super.viewDidLoad()
+           // Do any additional setup after loading the view.
+       }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        let controller = storyboard?.instantiateViewController(identifier: "SelectViewController") as! SelectViewController
+        controller.text = typeUserName.text
+        controller.modalPresentationStyle = .fullScreen
+        present(controller,animated: true, completion: nil)
+    }
+    
+     }
 
