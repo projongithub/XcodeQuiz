@@ -93,9 +93,12 @@ class TrigViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if(segue.identifier == "ShowResults") {
-            var vc = segue.destination as! ResultViewController
-            vc.numOfCorrectAns = numOfCorrectAns
-            vc.total = questions.count
+			if let vc = segue.destination as? ResultViewController {
+				vc.numOfCorrectAns = numOfCorrectAns
+				vc.total = questions.count
+			} else {
+				// maybe insert a warning for the user here?
+			}
         }
     }
     

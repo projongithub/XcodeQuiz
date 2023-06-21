@@ -14,10 +14,13 @@ class HomeViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let receiverVC = segue.destination as! SelectViewController
-        
-        if let text = typeUserName.text {
-            receiverVC.text = text
-        }
+		if let receiverVC = segue.destination as? SelectViewController {
+
+			if let text = typeUserName.text {
+				receiverVC.text = text
+			}
+		} else {
+			// maybe insert a warning for the user here?
+		}
     }
 }
