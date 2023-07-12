@@ -12,13 +12,12 @@ class SelectViewController: UIViewController {
     var text: String?
     
     @IBOutlet weak var displayUserName: UILabel!
-    
 
-    override func viewDidLoad() {
-        
-        if let receivedText = text {
-            displayUserName.text = receivedText
-        }
-    }
     
+    override func viewDidLoad() {
+            
+            if let receivedText = text {
+                displayUserName.text = receivedText
+            }
+        }
 }

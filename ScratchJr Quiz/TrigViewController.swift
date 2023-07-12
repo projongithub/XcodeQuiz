@@ -17,20 +17,31 @@ class TrigViewController: UIViewController {
     
     var questions: [Question] = [
         Question(
-            question: "Start on Green Flag block is used to",
-            answers: ["start the script when the green flag is tapped", "start the script when you tap on the character", "send a message of a specified color"],
+            question: "1) 'Start on Green Flag' block is used to:",
+            answers: ["a) Start the script when the green flag is tapped", "b) Start the script when you tap on the character", "c) Start the script whenever a message of the specified color is sent"],
+            correctAnswer: 0),
+        Question(
+            question: "2) 'Start on Tap' block is used to:",
+            answers: ["a) Start the script when the character is touched by another character", "b) Start the script when you tap on the character", "c) Start the script when the green flag is tapped"],
             correctAnswer: 1),
         Question(
-            question: "Start on Tap block",
-            answers: ["starts the script when the character is touched by another character", "starts the script when you tap on the character", "starts the script when the green flag is tapped"],
+            question: "3) 'Start on Bump' block is used to:",
+            answers: ["a) Start the script when you tap on the character", "b) Start the script when the character is touched by another character", "c) Send a message of a specified color"],
+            correctAnswer: 1),
+        Question(
+            question: "4) 'Start on Message' block is used to:",
+            answers: ["a) Start the script whenever a message of the specified color is sent", "b) Send a message of a specified color", "c) Starts the script when you tap on the character"],
+            correctAnswer: 0),
+        Question(
+            question: "5) 'Send Message' block is used to:",
+            answers: ["a) Start the script when the green flag is tapped", "b) Starts the script when you tap on the character", "c) Send a message of a specified color"],
             correctAnswer: 2)
         ]
 
     
-    @IBOutlet weak var lblQuestion: UITextView!
+    @IBOutlet weak var lblQuestion: UILabel!
     
-    
-    @IBOutlet weak var lblNext: UILabel!
+    @IBOutlet weak var lblProgress: UILabel!
     
     
     var currentQuestion: Question?
@@ -87,7 +98,7 @@ class TrigViewController: UIViewController {
         answer0.setTitle(currentQuestion!.answers[0], for: .normal)
         answer1.setTitle(currentQuestion!.answers[1], for: .normal)
         answer2.setTitle(currentQuestion!.answers[2], for: .normal)
-        lblNext.text = "\(currentQuestionPos + 1) / \(questions.count)"
+        lblProgress.text = "\(currentQuestionPos + 1) / \(questions.count) Questions"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
@@ -111,16 +122,5 @@ class TrigViewController: UIViewController {
         currentQuestion = questions[0]
         displayQuestion()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

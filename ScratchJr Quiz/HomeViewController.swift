@@ -12,15 +12,15 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var typeUserName: UITextField!
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if let receiverVC = segue.destination as? SelectViewController {
+            if let receiverVC = segue.destination as? SelectViewController {
 
-			if let text = typeUserName.text {
-				receiverVC.text = text
-			}
-		} else {
-			// maybe insert a warning for the user here?
-		}
-    }
+                if let text = typeUserName.text {
+                    receiverVC.text = text
+                }
+            } else {
+                // maybe insert a warning for the user here?
+            }
+        }
+
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1C641E2A5F42AA00BFEFBF /* TrigViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */; };
 		8E1C801B2A3BE51B0014396E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801A2A3BE51B0014396E /* AppDelegate.swift */; };
 		8E1C801D2A3BE51B0014396E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801C2A3BE51B0014396E /* SceneDelegate.swift */; };
 		8E1C801F2A3BE51B0014396E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801E2A3BE51B0014396E /* HomeViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigViewController1.swift; sourceTree = "<group>"; };
 		8E1C80172A3BE51B0014396E /* ScratchJr Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScratchJr Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1C801A2A3BE51B0014396E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E1C801C2A3BE51B0014396E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8E1C801E2A3BE51B0014396E /* HomeViewController.swift */,
 				8E1C802E2A3BF27E0014396E /* SelectViewController.swift */,
 				8E1C80302A40B0160014396E /* TrigViewController.swift */,
+				8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */,
 				8E6DE3252A4111F40053FF46 /* ResultViewController.swift */,
 				8E1C80202A3BE51B0014396E /* Main.storyboard */,
 				8E1C80232A3BE51D0014396E /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				8E1C802F2A3BF27E0014396E /* SelectViewController.swift in Sources */,
 				8E1C801B2A3BE51B0014396E /* AppDelegate.swift in Sources */,
 				8E1C801D2A3BE51B0014396E /* SceneDelegate.swift in Sources */,
+				8E1C641E2A5F42AA00BFEFBF /* TrigViewController1.swift in Sources */,
 				8E1C80312A40B0160014396E /* TrigViewController.swift in Sources */,
 				8E6DE3262A4111F40053FF46 /* ResultViewController.swift in Sources */,
 			);

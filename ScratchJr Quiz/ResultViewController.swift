@@ -14,7 +14,6 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var lblPerformance: UILabel!
     
-    
     @IBOutlet weak var lblResults: UILabel!
     
     override func viewDidLoad() {
