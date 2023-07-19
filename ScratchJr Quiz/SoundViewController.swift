@@ -1,14 +1,14 @@
 //
-//  Trig ViewController.swift
+//  SoundViewController.swift
 //  ScratchJr Quiz
 //
-//  Created by P M on 2023-06-19.
+//  Created by P M on 2023-07-18.
 //
 
 import UIKit
 
-class TrigViewController: UIViewController {
-    
+class SoundViewController: UIViewController {
+
     struct Question {
         let question: String
         let answers: [String]
@@ -17,25 +17,13 @@ class TrigViewController: UIViewController {
     
     var questions: [Question] = [
         Question(
-            question: "1) 'Start on Green Flag' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Start the script when you tap on the character.", "c) Start the script whenever a message of the specified color is sent."],
-            correctAnswer: 0),
+            question: "1) 'Pop' block is used to:",
+            answers: ["a) Play a sound recorded by the user.", "b) Start the script when you tap on the character.", "c) Play a 'Pop' Sound."],
+            correctAnswer: 2),
         Question(
-            question: "2) 'Start on Tap' block is used to:",
-            answers: ["a) Start the script when the character is touched by another character.", "b) Start the script when you tap on the character.", "c) Start the script when the green flag is tapped."],
-            correctAnswer: 1),
-        Question(
-            question: "3) 'Start on Bump' block is used to:",
-            answers: ["a) Start the script when you tap on the character.", "b) Start the script when the character is touched by another character.", "c) Send a message of a specified color."],
-            correctAnswer: 1),
-        Question(
-            question: "4) 'Start on Message' block is used to:",
-            answers: ["a) Start the script whenever a message of the specified color is sent.", "b) Send a message of a specified color.", "c) Starts the script when you tap on the character."],
-            correctAnswer: 0),
-        Question(
-            question: "5) 'Send Message' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Starts the script when you tap on the character.", "c) Send a message of a specified color."],
-            correctAnswer: 2)
+            question: "2) 'Play Recorded Sound' block is used to:",
+            answers: ["a) Play a sound recorded by the user.", "b) Start the script when you tap on the character.", "c) Play a 'Pop' Sound."],
+            correctAnswer: 0)
         ]
 
     
@@ -88,7 +76,7 @@ class TrigViewController: UIViewController {
         }
         else
         {
-            performSegue(withIdentifier: "ShowResults", sender: nil)
+            performSegue(withIdentifier: "ShowResultsSound", sender: nil)
         }
     }
     
@@ -103,16 +91,15 @@ class TrigViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if(segue.identifier == "ShowResults") {
-			if let vc = segue.destination as? ResultViewController {
-				vc.numOfCorrectAns = numOfCorrectAns
-				vc.total = questions.count
-			} else {
-				// a warning for the user here
-			}
+        if(segue.identifier == "ShowResultsSound") {
+            if let vc = segue.destination as? ResultSoundViewController {
+                vc.numOfCorrectAns = numOfCorrectAns
+                vc.total = questions.count
+            } else {
+                // a warning for the user here
+            }
         }
     }
-    
     
     
     override func viewDidLoad() {
@@ -122,5 +109,4 @@ class TrigViewController: UIViewController {
         currentQuestion = questions[0]
         displayQuestion()
     }
-
 }

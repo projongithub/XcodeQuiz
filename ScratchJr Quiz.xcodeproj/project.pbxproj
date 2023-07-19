@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E1C641E2A5F42AA00BFEFBF /* TrigViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */; };
+		8E14C3CE2A61C13F00228AA0 /* ResultMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14C3CD2A61C13F00228AA0 /* ResultMotionViewController.swift */; };
+		8E1C641E2A5F42AA00BFEFBF /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C641D2A5F42AA00BFEFBF /* MotionViewController.swift */; };
 		8E1C801B2A3BE51B0014396E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801A2A3BE51B0014396E /* AppDelegate.swift */; };
 		8E1C801D2A3BE51B0014396E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801C2A3BE51B0014396E /* SceneDelegate.swift */; };
 		8E1C801F2A3BE51B0014396E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C801E2A3BE51B0014396E /* HomeViewController.swift */; };
@@ -16,11 +17,20 @@
 		8E1C80272A3BE51D0014396E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1C80252A3BE51D0014396E /* LaunchScreen.storyboard */; };
 		8E1C802F2A3BF27E0014396E /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C802E2A3BF27E0014396E /* SelectViewController.swift */; };
 		8E1C80312A40B0160014396E /* TrigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C80302A40B0160014396E /* TrigViewController.swift */; };
+		8E1E9B6A2A688A2A008E7EE6 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E9B692A688A2A008E7EE6 /* ControlViewController.swift */; };
+		8E1E9B6E2A688AC9008E7EE6 /* ResultControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E9B6D2A688AC9008E7EE6 /* ResultControlViewController.swift */; };
+		8E1E9B702A689026008E7EE6 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E9B6F2A689026008E7EE6 /* EndViewController.swift */; };
+		8E1E9B722A68904B008E7EE6 /* ResultEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E9B712A68904B008E7EE6 /* ResultEndViewController.swift */; };
 		8E6DE3262A4111F40053FF46 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DE3252A4111F40053FF46 /* ResultViewController.swift */; };
+		8ECDD5002A66FB6300937304 /* LooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD4FF2A66FB6300937304 /* LooksViewController.swift */; };
+		8ECDD5022A66FB7E00937304 /* ResultLooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5012A66FB7E00937304 /* ResultLooksViewController.swift */; };
+		8ECDD5042A670B0300937304 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5032A670B0300937304 /* SoundViewController.swift */; };
+		8ECDD5062A6780D500937304 /* ResultSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5052A6780D500937304 /* ResultSoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigViewController1.swift; sourceTree = "<group>"; };
+		8E14C3CD2A61C13F00228AA0 /* ResultMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMotionViewController.swift; sourceTree = "<group>"; };
+		8E1C641D2A5F42AA00BFEFBF /* MotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
 		8E1C80172A3BE51B0014396E /* ScratchJr Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScratchJr Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1C801A2A3BE51B0014396E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E1C801C2A3BE51B0014396E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +41,15 @@
 		8E1C80282A3BE51D0014396E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1C802E2A3BF27E0014396E /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		8E1C80302A40B0160014396E /* TrigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigViewController.swift; sourceTree = "<group>"; };
+		8E1E9B692A688A2A008E7EE6 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		8E1E9B6D2A688AC9008E7EE6 /* ResultControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultControlViewController.swift; sourceTree = "<group>"; };
+		8E1E9B6F2A689026008E7EE6 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		8E1E9B712A68904B008E7EE6 /* ResultEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultEndViewController.swift; sourceTree = "<group>"; };
 		8E6DE3252A4111F40053FF46 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		8ECDD4FF2A66FB6300937304 /* LooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksViewController.swift; sourceTree = "<group>"; };
+		8ECDD5012A66FB7E00937304 /* ResultLooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLooksViewController.swift; sourceTree = "<group>"; };
+		8ECDD5032A670B0300937304 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		8ECDD5052A6780D500937304 /* ResultSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +87,17 @@
 				8E1C801E2A3BE51B0014396E /* HomeViewController.swift */,
 				8E1C802E2A3BF27E0014396E /* SelectViewController.swift */,
 				8E1C80302A40B0160014396E /* TrigViewController.swift */,
-				8E1C641D2A5F42AA00BFEFBF /* TrigViewController1.swift */,
+				8E1C641D2A5F42AA00BFEFBF /* MotionViewController.swift */,
+				8ECDD4FF2A66FB6300937304 /* LooksViewController.swift */,
+				8ECDD5032A670B0300937304 /* SoundViewController.swift */,
+				8E1E9B692A688A2A008E7EE6 /* ControlViewController.swift */,
+				8E1E9B6F2A689026008E7EE6 /* EndViewController.swift */,
 				8E6DE3252A4111F40053FF46 /* ResultViewController.swift */,
+				8E14C3CD2A61C13F00228AA0 /* ResultMotionViewController.swift */,
+				8ECDD5012A66FB7E00937304 /* ResultLooksViewController.swift */,
+				8ECDD5052A6780D500937304 /* ResultSoundViewController.swift */,
+				8E1E9B6D2A688AC9008E7EE6 /* ResultControlViewController.swift */,
+				8E1E9B712A68904B008E7EE6 /* ResultEndViewController.swift */,
 				8E1C80202A3BE51B0014396E /* Main.storyboard */,
 				8E1C80232A3BE51D0014396E /* Assets.xcassets */,
 				8E1C80252A3BE51D0014396E /* LaunchScreen.storyboard */,
@@ -151,11 +178,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1C801F2A3BE51B0014396E /* HomeViewController.swift in Sources */,
+				8ECDD5002A66FB6300937304 /* LooksViewController.swift in Sources */,
 				8E1C802F2A3BF27E0014396E /* SelectViewController.swift in Sources */,
+				8E1E9B6E2A688AC9008E7EE6 /* ResultControlViewController.swift in Sources */,
+				8ECDD5042A670B0300937304 /* SoundViewController.swift in Sources */,
 				8E1C801B2A3BE51B0014396E /* AppDelegate.swift in Sources */,
+				8E1E9B702A689026008E7EE6 /* EndViewController.swift in Sources */,
 				8E1C801D2A3BE51B0014396E /* SceneDelegate.swift in Sources */,
-				8E1C641E2A5F42AA00BFEFBF /* TrigViewController1.swift in Sources */,
+				8E1C641E2A5F42AA00BFEFBF /* MotionViewController.swift in Sources */,
 				8E1C80312A40B0160014396E /* TrigViewController.swift in Sources */,
+				8E1E9B6A2A688A2A008E7EE6 /* ControlViewController.swift in Sources */,
+				8E14C3CE2A61C13F00228AA0 /* ResultMotionViewController.swift in Sources */,
+				8ECDD5062A6780D500937304 /* ResultSoundViewController.swift in Sources */,
+				8E1E9B722A68904B008E7EE6 /* ResultEndViewController.swift in Sources */,
+				8ECDD5022A66FB7E00937304 /* ResultLooksViewController.swift in Sources */,
 				8E6DE3262A4111F40053FF46 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

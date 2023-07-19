@@ -1,14 +1,14 @@
 //
-//  Trig ViewController.swift
+//  ControlViewController.swift
 //  ScratchJr Quiz
 //
-//  Created by P M on 2023-06-19.
+//  Created by P M on 2023-07-19.
 //
 
 import UIKit
 
-class TrigViewController: UIViewController {
-    
+class ControlViewController: UIViewController {
+
     struct Question {
         let question: String
         let answers: [String]
@@ -17,25 +17,22 @@ class TrigViewController: UIViewController {
     
     var questions: [Question] = [
         Question(
-            question: "1) 'Start on Green Flag' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Start the script when you tap on the character.", "c) Start the script whenever a message of the specified color is sent."],
+            question: "1) 'Wait' block is used to:",
+            answers: ["a) Pause the script for a specified amount of time (in tenths of seconds).", "b) Stop all the characters' scripts.", "c) Change the rate at which certain blocks are run."],
             correctAnswer: 0),
         Question(
-            question: "2) 'Start on Tap' block is used to:",
-            answers: ["a) Start the script when the character is touched by another character.", "b) Start the script when you tap on the character.", "c) Start the script when the green flag is tapped."],
+            question: "2) 'Stop' block is used to:",
+            answers: ["a) Run the blocks inside a specified number of times.", "b) Stop all the characters' scripts.", "c) Pause the script for a specified amount of time (in tenths of seconds)."],
             correctAnswer: 1),
         Question(
-            question: "3) 'Start on Bump' block is used to:",
-            answers: ["a) Start the script when you tap on the character.", "b) Start the script when the character is touched by another character.", "c) Send a message of a specified color."],
-            correctAnswer: 1),
+            question: "3) 'Set Speed' block is used to:",
+            answers: ["a) Pause the script for a specified amount of time (in tenths of seconds).", "b) Run the blocks inside a specified number of times.", "c) Change the rate at which certain blocks are run."],
+            correctAnswer: 2),
         Question(
-            question: "4) 'Start on Message' block is used to:",
-            answers: ["a) Start the script whenever a message of the specified color is sent.", "b) Send a message of a specified color.", "c) Starts the script when you tap on the character."],
-            correctAnswer: 0),
-        Question(
-            question: "5) 'Send Message' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Starts the script when you tap on the character.", "c) Send a message of a specified color."],
-            correctAnswer: 2)
+            question: "4) 'Repeat' block is used to:",
+            answers: ["a) Run the blocks inside a specified number of times.", "b) Stop all the characters' scripts.", "c) Change the rate at which certain blocks are run."],
+            correctAnswer: 0)
+        
         ]
 
     
@@ -49,9 +46,9 @@ class TrigViewController: UIViewController {
     var numOfCorrectAns = 0
     
     @IBOutlet weak var answer0: UIButton!
-    
+  
     @IBOutlet weak var answer1: UIButton!
-    
+   
     @IBOutlet weak var answer2: UIButton!
     
     @IBAction func option1(_ sender: UIButton)
@@ -88,7 +85,7 @@ class TrigViewController: UIViewController {
         }
         else
         {
-            performSegue(withIdentifier: "ShowResults", sender: nil)
+            performSegue(withIdentifier: "ShowResultsControl", sender: nil)
         }
     }
     
@@ -103,17 +100,15 @@ class TrigViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if(segue.identifier == "ShowResults") {
-			if let vc = segue.destination as? ResultViewController {
-				vc.numOfCorrectAns = numOfCorrectAns
-				vc.total = questions.count
-			} else {
-				// a warning for the user here
-			}
+        if(segue.identifier == "ShowResultsControl") {
+            if let vc = segue.destination as? ResultControlViewController {
+                vc.numOfCorrectAns = numOfCorrectAns
+                vc.total = questions.count
+            } else {
+                // a warning for the user here
+            }
         }
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,5 +117,4 @@ class TrigViewController: UIViewController {
         currentQuestion = questions[0]
         displayQuestion()
     }
-
 }

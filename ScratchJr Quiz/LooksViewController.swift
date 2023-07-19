@@ -1,13 +1,13 @@
 //
-//  Trig ViewController.swift
+//  LooksViewController.swift
 //  ScratchJr Quiz
 //
-//  Created by P M on 2023-06-19.
+//  Created by P M on 2023-07-18.
 //
 
 import UIKit
 
-class TrigViewController: UIViewController {
+class LooksViewController: UIViewController {
     
     struct Question {
         let question: String
@@ -17,27 +17,31 @@ class TrigViewController: UIViewController {
     
     var questions: [Question] = [
         Question(
-            question: "1) 'Start on Green Flag' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Start the script when you tap on the character.", "c) Start the script whenever a message of the specified color is sent."],
+            question: "1) 'Say' block is used to:",
+            answers: ["a) Show a specified message in a speech bubble above the character.", "b) Increase the character's size.", "c) Decrease the character's size."],
             correctAnswer: 0),
         Question(
-            question: "2) 'Start on Tap' block is used to:",
-            answers: ["a) Start the script when the character is touched by another character.", "b) Start the script when you tap on the character.", "c) Start the script when the green flag is tapped."],
+            question: "2) 'Grow' block is used to:",
+            answers: ["a) Fade out the character until it is invisible.", "b) Increase the character's size.", "c) Return the character to its default size."],
             correctAnswer: 1),
         Question(
-            question: "3) 'Start on Bump' block is used to:",
-            answers: ["a) Start the script when you tap on the character.", "b) Start the script when the character is touched by another character.", "c) Send a message of a specified color."],
-            correctAnswer: 1),
-        Question(
-            question: "4) 'Start on Message' block is used to:",
-            answers: ["a) Start the script whenever a message of the specified color is sent.", "b) Send a message of a specified color.", "c) Starts the script when you tap on the character."],
+            question: "3) 'Shrink' block is used to:",
+            answers: ["a) Decrease the character's size.", "b) Fade in the character until it is fully visible.", "c) Return the character to its default size."],
             correctAnswer: 0),
         Question(
-            question: "5) 'Send Message' block is used to:",
-            answers: ["a) Start the script when the green flag is tapped.", "b) Starts the script when you tap on the character.", "c) Send a message of a specified color."],
+            question: "4) 'Reset size' block is used to:",
+            answers: ["a) Return the character to its default size.", "b) Show a specified message in a speech bubble above the character.", "c) Decrease the character's size."],
+            correctAnswer: 0),
+        Question(
+            question: "5) 'Hide' block is used to:",
+            answers: ["a) Return the character to its default size.", "b) Fade out the character until it is invisible.", "c) Decrease the character's size."],
+            correctAnswer: 1),
+        Question(
+            question: "6) 'Show' block is used to:",
+            answers: ["a) Increase the character's size.", "b) Fade out the character until it is invisible.", "c) Fade in the character until it is fully visible."],
             correctAnswer: 2)
+        
         ]
-
     
     @IBOutlet weak var lblQuestion: UILabel!
     
@@ -88,7 +92,7 @@ class TrigViewController: UIViewController {
         }
         else
         {
-            performSegue(withIdentifier: "ShowResults", sender: nil)
+            performSegue(withIdentifier: "ShowResultsLooks", sender: nil)
         }
     }
     
@@ -103,13 +107,13 @@ class TrigViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if(segue.identifier == "ShowResults") {
-			if let vc = segue.destination as? ResultViewController {
-				vc.numOfCorrectAns = numOfCorrectAns
-				vc.total = questions.count
-			} else {
-				// a warning for the user here
-			}
+        if(segue.identifier == "ShowResultsLooks") {
+            if let vc = segue.destination as? ResultLooksViewController {
+                vc.numOfCorrectAns = numOfCorrectAns
+                vc.total = questions.count
+            } else {
+                // a warning for the user here
+            }
         }
     }
     
@@ -122,5 +126,5 @@ class TrigViewController: UIViewController {
         currentQuestion = questions[0]
         displayQuestion()
     }
-
+    
 }

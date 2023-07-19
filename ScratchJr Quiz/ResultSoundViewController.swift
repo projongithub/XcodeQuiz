@@ -1,13 +1,13 @@
 //
-//  ResultViewController.swift
+//  ResultSoundViewController.swift
 //  ScratchJr Quiz
 //
-//  Created by P M on 2023-06-19.
+//  Created by P M on 2023-07-18.
 //
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultSoundViewController: UIViewController {
 
     var numOfCorrectAns = 0
     var total = 0
