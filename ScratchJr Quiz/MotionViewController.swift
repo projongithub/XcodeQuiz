@@ -7,8 +7,19 @@
 
     import UIKit
 
+enum TypeOfQuestions {
+	case trig
+	case sound
+	case motion
+}
+
+
+
     class MotionViewController: UIViewController {
-        
+		var typeOfQuestions: TypeOfQuestions = .sound
+
+		@IBOutlet weak var backgroundImage: UIImageView!
+		
         struct Question {
             let question: String
             let answers: [String]
@@ -131,7 +142,19 @@
         override func viewDidLoad() {
             super.viewDidLoad()
             self.navigationItem.setHidesBackButton(true, animated: true)
-            
+
+			switch typeOfQuestions {
+			case .trig:
+				self.backgroundImage.image = UIImage(named: "3) Ques P")
+				// self.questions = Helper.questions.trig
+			case .sound:
+				self.backgroundImage.image = UIImage(named: "3) Ques-Sound Pg")
+			case .motion:
+				self.backgroundImage.image = UIImage(named: "3) Ques-Motion Pg")
+			}
+
+
+
             currentQuestion = questions[0]
             displayQuestion()
         }

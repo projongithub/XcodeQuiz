@@ -26,6 +26,7 @@
 		8ECDD5022A66FB7E00937304 /* ResultLooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5012A66FB7E00937304 /* ResultLooksViewController.swift */; };
 		8ECDD5042A670B0300937304 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5032A670B0300937304 /* SoundViewController.swift */; };
 		8ECDD5062A6780D500937304 /* ResultSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD5052A6780D500937304 /* ResultSoundViewController.swift */; };
+		A004DE852A68A18900AEDA1B /* Comments in Resources */ = {isa = PBXBuildFile; fileRef = A004DE842A68A18900AEDA1B /* Comments */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8ECDD5012A66FB7E00937304 /* ResultLooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLooksViewController.swift; sourceTree = "<group>"; };
 		8ECDD5032A670B0300937304 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		8ECDD5052A6780D500937304 /* ResultSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSoundViewController.swift; sourceTree = "<group>"; };
+		A004DE842A68A18900AEDA1B /* Comments */ = {isa = PBXFileReference; lastKnownFileType = text; path = Comments; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8E1C801A2A3BE51B0014396E /* AppDelegate.swift */,
+				A004DE842A68A18900AEDA1B /* Comments */,
 				8E1C801C2A3BE51B0014396E /* SceneDelegate.swift */,
 				8E1C801E2A3BE51B0014396E /* HomeViewController.swift */,
 				8E1C802E2A3BF27E0014396E /* SelectViewController.swift */,
@@ -166,6 +169,7 @@
 			files = (
 				8E1C80272A3BE51D0014396E /* LaunchScreen.storyboard in Resources */,
 				8E1C80242A3BE51D0014396E /* Assets.xcassets in Resources */,
+				A004DE852A68A18900AEDA1B /* Comments in Resources */,
 				8E1C80222A3BE51B0014396E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

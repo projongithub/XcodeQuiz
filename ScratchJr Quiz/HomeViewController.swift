@@ -8,8 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
-    
+    // try to implement a function that hides the keyboard when the user taps outside of the textfield, that way they won't be stuck on a real phone
+
+	// try to hide the white lines on the sides, probably could be done with constraints
+
     @IBOutlet weak var typeUserName: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -20,6 +22,7 @@ class HomeViewController: UIViewController {
                 }
             } else {
                 // maybe insert a warning for the user here?
+				// maybe the Alert item of UIKit can help you
             }
         }
 

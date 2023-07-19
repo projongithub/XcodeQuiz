@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mV5-W1-mtB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mV5-W1-mtB">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -877,6 +878,7 @@
                         <outlet property="answer0" destination="Yco-g8-PrM" id="csj-Mw-qCN"/>
                         <outlet property="answer1" destination="vY4-Wp-IoG" id="D2C-Le-WqQ"/>
                         <outlet property="answer2" destination="OOI-Aa-VRM" id="flO-ZB-zKV"/>
+                        <outlet property="backgroundImage" destination="69X-0L-23C" id="oPg-2k-dh5"/>
                         <outlet property="lblProgress" destination="xTl-Hr-xxg" id="LNg-wW-ShW"/>
                         <outlet property="lblQuestion" destination="Ren-Ug-Ccp" id="CMC-VE-3b9"/>
                         <segue destination="240-OU-5Kt" kind="show" identifier="ShowResultsMotion" id="TBK-K7-4Cw"/>

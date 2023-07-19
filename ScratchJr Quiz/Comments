@@ -1,0 +1,12 @@
+A suggestion in terms of priorities:
+
+FIXES
+
+1 - Fix the constraints for different screen sizes;
+2 - Fix hiding the keyboard for the home screen;
+3 - Try to remove all the Force Unwraps from various parts of the app;
+
+IMPROVEMENTS
+
+4 - Try to make the questions engine reusable to avoid having multiple view controllers that are very similar;
+5 - Try to animate the transitions between questions and screens.

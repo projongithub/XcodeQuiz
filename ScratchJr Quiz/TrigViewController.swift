@@ -94,6 +94,7 @@ class TrigViewController: UIViewController {
     
     func displayQuestion()
     {
+		// be very careful with the Force Unwrap
         lblQuestion.text = currentQuestion!.question
         answer0.setTitle(currentQuestion!.answers[0], for: .normal)
         answer1.setTitle(currentQuestion!.answers[1], for: .normal)
