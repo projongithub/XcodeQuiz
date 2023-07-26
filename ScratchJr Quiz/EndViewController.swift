@@ -29,7 +29,7 @@ class EndViewController: UIViewController {
             answers: ["a) Change to the specified page of the project.", "b) Indicate the end of the script (but does not affect the script in any way).", "c) Run the script over and over."],
             correctAnswer: 0)
         ]
-
+    
     
     @IBOutlet weak var lblQuestion: UILabel!
     
@@ -63,7 +63,7 @@ class EndViewController: UIViewController {
     
     func checkAnswer(usersAns: Int)
     {
-        if(usersAns == currentQuestion!.correctAnswer)
+        if(usersAns == currentQuestion?.correctAnswer)
         {
             numOfCorrectAns += 1
         }
@@ -86,7 +86,7 @@ class EndViewController: UIViewController {
     
     func displayQuestion()
     {
-        lblQuestion.text = currentQuestion!.question
+        lblQuestion.text = currentQuestion?.question
         answer0.setTitle(currentQuestion!.answers[0], for: .normal)
         answer1.setTitle(currentQuestion!.answers[1], for: .normal)
         answer2.setTitle(currentQuestion!.answers[2], for: .normal)
@@ -100,7 +100,7 @@ class EndViewController: UIViewController {
                 vc.numOfCorrectAns = numOfCorrectAns
                 vc.total = questions.count
             } else {
-                // a warning for the user here
+                // a warning 
             }
         }
     }

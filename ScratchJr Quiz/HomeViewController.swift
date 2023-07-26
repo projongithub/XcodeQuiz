@@ -19,12 +19,17 @@ class HomeViewController: UIViewController {
                     receiverVC.text = text
                 }
             } else {
-                // maybe insert a warning for the user here?
+                // maybe insert a warning 
             }
         }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        let dismissKeyboard = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(dismissKeyboard)
+        dismissKeyboard.cancelsTouchesInView = false
     }
+        
 }

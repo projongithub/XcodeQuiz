@@ -18,7 +18,7 @@
         var questions: [Question] = [
             Question(
                 question: "1) 'Move Right' block is used to:",
-                answers: ["a) SMove the character up a specified number of grid squares and then down again.", "b) Move the character a specified number of grid squares to the right.", "c) Rotate the character clockwise a specified amount."],
+                answers: ["a) Move the character up a specified number of grid squares and then down again.", "b) Move the character a specified number of grid squares to the right.", "c) Rotate the character clockwise a specified amount."],
                 correctAnswer: 1),
             Question(
                 question: "2) 'Move Left' block is used to:",
@@ -84,7 +84,7 @@
         
         func checkAnswer(usersAns: Int)
         {
-            if(usersAns == currentQuestion!.correctAnswer)
+            if(usersAns == currentQuestion?.correctAnswer)
             {
                 numOfCorrectAns += 1
             }
@@ -107,7 +107,7 @@
         
         func displayQuestion()
         {
-            lblQuestion.text = currentQuestion!.question
+            lblQuestion.text = currentQuestion?.question
             answer0.setTitle(currentQuestion!.answers[0], for: .normal)
             answer1.setTitle(currentQuestion!.answers[1], for: .normal)
             answer2.setTitle(currentQuestion!.answers[2], for: .normal)
@@ -121,7 +121,7 @@
                     vc.numOfCorrectAns = numOfCorrectAns
                     vc.total = questions.count
                 } else {
-                    // a warning for the user here
+                    // a warning
                 }
             }
         }
